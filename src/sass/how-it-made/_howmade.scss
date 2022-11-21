@@ -1,0 +1,102 @@
+.how-made {
+    @include section(60px);
+    background-color: $main-bg-color;
+}
+.how-made__sub-title {
+    @include sub__title(18px, 22px, $main-color);
+
+    &--indent {
+        margin-bottom: 12px;
+    }
+}
+.how-made__title {
+    @include title(30px, 1.26, $main-color);
+
+    &--indent {
+        margin-bottom: 32px;
+    }
+}
+.how-made__img-bg {
+    position: relative;
+    width: 278px;
+    height: 278px;
+
+    margin-bottom: 62px;
+
+    border-radius: 50%;
+    background-color: $yellow-bg;
+}
+.how-made__img {
+    position: absolute;
+    top: 22px;
+    left: 0;
+    display: block;
+    width: 100%;
+    // border-radius: 50%;
+}
+.how-made__text {
+    font-family: $main-font;
+
+    font-size: 12px;
+    line-height: 1.76;
+
+    padding: 0 32px;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: $main-color;
+
+    &--indent {
+        margin-bottom: 20px;
+    }
+}
+.how-made__button {
+    @include main__button(14px, 164px, 42px);
+    margin: 0 auto;
+    margin-bottom: 54px;
+}
+
+.how-made__list {
+    @extend %list;
+}
+.how-made__item {
+    text-align: center;
+}
+.how-made__icon {
+    margin-bottom: 16px;
+}
+.how-made__svg {
+    padding: 7px;
+
+    border-radius: 50%;
+    background-color: $buttons-bg-color;
+}
+.how-made__numbers {
+    font-family: $roboto-font;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    margin-bottom: 18px;
+
+    color: $main-color;
+}
+.how-made__discr {
+    font-family: $main-color;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+
+    margin-bottom: 28px;
+    padding: 0 45px;
+
+    color: $main-color;
+
+    &--indent {
+        margin-bottom: 0;
+    }
+}

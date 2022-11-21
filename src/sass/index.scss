@@ -1,2 +1,9 @@
-@import './common';
-@import './example';
+@import "./variables";
+@import "./common";
+@import "./mixins";
+@import "./placeholders";
+@import "./products/products";
+@import "./how-it-made/howmade";
+@import "./galary/galary";
+@import "./reviewe/swiper-reviewe";
+@import "./locations/locations";
