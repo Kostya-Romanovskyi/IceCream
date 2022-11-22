@@ -1,0 +1,64 @@
+.passion {
+    @include section(40px);
+    background-color: $main-bg-color;
+}
+.passion__wrap-title {
+}
+.passion__subtitle {
+    @include sub__title(18px, 1.22, $main-color);
+    text-align: left;
+    margin-bottom: 16px;
+}
+.passion__title {
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    margin-bottom: 42px;
+
+    color: $main-color;
+}
+.social {
+}
+.social__list {
+    @extend %list;
+    display: flex;
+    justify-content: flex-end;
+
+    margin-bottom: 38px;
+}
+.social__item {
+    &:not(:last-child) {
+        margin-right: 28px;
+    }
+}
+.social__link {
+}
+.social__icon {
+    fill: $buttons-bg-color;
+    stroke: $main-bg-color;
+}
+.social__text {
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.86;
+
+    text-align: right;
+
+    color: $secondary-color;
+}
+.social__tel {
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.86;
+
+    text-align: right;
+    text-decoration: none;
+
+    color: $main-color;
+}
