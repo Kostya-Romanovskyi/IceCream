@@ -1,6 +1,6 @@
 .products {
     @include section(60px);
-    background-image: url(../Images/products/bg-ice_cream.png);
+    background-image: url(../images/products/bg-ice_cream.png);
 }
 .product__sub-title {
     @include sub__title(18px, 1.22, $secondary-color);
