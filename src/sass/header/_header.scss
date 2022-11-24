@@ -1,0 +1,83 @@
+.header {
+    position: relative;
+    background-color: $main-bg-color;
+}
+.header__mobile-wrapp {
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 0;
+}
+.logo__img {
+}
+.logo__burger {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+}
+.burger {
+    .header__mobile-wrapp.is-open & {
+        display: none;
+    }
+}
+.cross {
+    display: none;
+
+    fill: $main-color;
+
+    .header__mobile-wrapp.is-open & {
+        display: block;
+    }
+}
+.header__nav-wrapp {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    transform: translate(0, -115%);
+    transition: transform 500ms;
+
+    text-align: center;
+
+    background-color: $main-bg-color;
+
+    .header__mobile-wrapp.is-open & {
+        transform: translate(0, 0);
+    }
+}
+.nav {
+    text-align: center;
+}
+.nav__list {
+    @extend %list;
+
+    padding: 50px 23px 111px 23px;
+}
+.nav__item {
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
+.nav_link {
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.21;
+
+    text-decoration: none;
+
+    color: $main-color;
+
+    &:hover,
+    &:focus {
+        color: $secondary-color;
+    }
+}
+.header__btn {
+    @include main__button(14px, 152px, 42px);
+}
