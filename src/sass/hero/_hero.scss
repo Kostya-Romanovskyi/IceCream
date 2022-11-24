@@ -1,0 +1,56 @@
+.hero {
+    position: relative;
+    padding-top: 60px;
+    background-color: $main-bg-color;
+}
+.hero__container {
+    position: relative;
+
+    background-image: url(../images/hero/bg-bullets.svg);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.hero__title {
+    font-family: $secondary-font;
+
+    font-size: 26px;
+    line-height: 1.26;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    margin-bottom: 32px;
+
+    color: $main-color;
+}
+.hero__decor {
+    font-size: 33px;
+}
+.hero__anchers {
+    padding-bottom: 240px;
+}
+.hero__btn {
+    @include secondary__button(8px, 1.25, 64px, 24px);
+}
+.hero__link {
+    font-family: $main-font;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+
+    text-decoration-line: underline;
+
+    margin-left: 8px;
+
+    color: $buttons-bg-color;
+}
+.hero__img-wrapp {
+    position: absolute;
+    bottom: -53px;
+    left: 17%;
+}
+.hero__img {
+    width: 100%;
+
+    display: block;
+}

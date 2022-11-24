@@ -25,17 +25,23 @@
     border: none;
 }
 .burger {
-    .header__mobile-wrapp.is-open & {
-        display: none;
+    transition: opacity 250ms;
+
+    .logo__burger.is-open & {
+        // display: none;
+        transition: opacity 250ms;
+        opacity: 0;
     }
 }
 .cross {
-    display: none;
+    // display: none;
+    transition: opacity 250ms;
+    opacity: 0;
 
     fill: $main-color;
 
-    .header__mobile-wrapp.is-open & {
-        display: block;
+    .logo__burger.is-open & {
+        opacity: 1;
     }
 }
 .header__nav-wrapp {
@@ -43,6 +49,7 @@
     top: 100%;
     left: 0;
     width: 100%;
+    z-index: 10;
 
     transform: translate(0, -115%);
     transition: transform 500ms;
@@ -85,4 +92,5 @@
 }
 .header__btn {
     @include main__button(14px, 152px, 42px);
+    margin-bottom: 32px;
 }
