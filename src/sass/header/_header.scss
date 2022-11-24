@@ -6,6 +6,7 @@
 }
 
 .logo {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,10 +15,11 @@
 }
 .logo__img {
 }
+
 .logo__burger {
     position: absolute;
     top: 16px;
-    right: 20px;
+    right: 0;
 
     background-color: transparent;
     border: none;
