@@ -1,0 +1,64 @@
+<div class="header__backdrop">
+  <div class="header__modal">
+    <button class="header__modal-button" type="button">
+      <svg class="header__modal-icon" width="16" height="16">
+        <use href="./images/sprite.svg#modal-close"></use>
+      </svg>
+    </button>
+    <p class="header__modal-title">Buy now</p>
+    <form class="product" action="POST">
+      <ul class="product__list-modal">
+        <li class="product__item-modal">
+          <input class="product__input" id="input-green" type="checkbox" />
+          <label class="product__label product__label--green" for="input-green">
+            <img
+              class="product__input-img product__input-green"
+              src="./images/modals/buy-now/buy-modal-1-1x.png"
+              alt=""
+            />
+            <span class="product__modul-text">ice cream</span>
+          </label>
+        </li>
+
+        <li class="product__item-modal">
+          <input class="product__input" id="input-yellow" type="checkbox" />
+          <label
+            class="product__label product__label--yellow"
+            for="input-yellow"
+          >
+            <img
+              class="product__input-img product__input-yellow"
+              src="./images/modals/buy-now/buy-modal-2-1x.png"
+              alt=""
+            />
+            <span class="product__modul-text">ice coffee</span>
+          </label>
+        </li>
+
+        <li class="product__item-modal">
+          <input class="product__input" id="input-orange" type="checkbox" />
+          <label
+            class="product__label product__label--orange"
+            for="input-orange"
+          >
+            <img
+              class="product__input-img product__input-orange"
+              src="./images/modals/buy-now/buy-modal-3-1x.png"
+              alt=""
+            />
+            <span class="product__modul-text">milkshake</span>
+          </label>
+        </li>
+      </ul>
+      <input class="input__name" type="text" name="name" placeholder="Name" />
+      <input class="input__tel" type="number" name="tel" placeholder="Phone" />
+      <textarea
+        class="input__comment"
+        name="textarea"
+        id=""
+        placeholder="Comment"
+      ></textarea>
+      <button class="input__submit" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
