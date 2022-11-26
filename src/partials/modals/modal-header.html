@@ -1,52 +1,50 @@
-<div class="header__backdrop">
-  <div class="header__modal">
-    <button class="header__modal-button" type="button">
+<div class="header__backdrop js-overlay-modal" id="overlay-close">
+  <div class="header__modal modal" data-modal="1">
+    <button
+      class="header__modal-button js-modal-close"
+      id="modal-buy-now-close"
+      type="button"
+    >
       <svg class="header__modal-icon" width="16" height="16">
         <use href="./images/sprite.svg#modal-close"></use>
       </svg>
     </button>
     <p class="header__modal-title">Buy now</p>
-    <form class="product" action="POST">
-      <ul class="product__list-modal">
-        <li class="product__item-modal">
-          <input class="product__input" id="input-green" type="checkbox" />
-          <label class="product__label product__label--green" for="input-green">
+    <form class="buy" action="POST">
+      <ul class="buy__list-modal">
+        <li class="buy__item-modal">
+          <input class="buy__input" id="input-green" type="checkbox" />
+          <label class="buy__label buy__label--green" for="input-green">
             <img
-              class="product__input-img product__input-green"
+              class="buy__input-img buy__input-green"
               src="./images/modals/buy-now/buy-modal-1-1x.png"
               alt=""
             />
-            <span class="product__modul-text">ice cream</span>
+            <span class="buy__modul-text">ice cream</span>
           </label>
         </li>
 
-        <li class="product__item-modal">
-          <input class="product__input" id="input-yellow" type="checkbox" />
-          <label
-            class="product__label product__label--yellow"
-            for="input-yellow"
-          >
+        <li class="buy__item-modal">
+          <input class="buy__input" id="input-yellow" type="checkbox" />
+          <label class="buy__label buy__label--yellow" for="input-yellow">
             <img
-              class="product__input-img product__input-yellow"
+              class="buy__input-img buy__input-yellow"
               src="./images/modals/buy-now/buy-modal-2-1x.png"
               alt=""
             />
-            <span class="product__modul-text">ice coffee</span>
+            <span class="buy__modul-text">ice coffee</span>
           </label>
         </li>
 
-        <li class="product__item-modal">
-          <input class="product__input" id="input-orange" type="checkbox" />
-          <label
-            class="product__label product__label--orange"
-            for="input-orange"
-          >
+        <li class="buy__item-modal">
+          <input class="buy__input" id="input-orange" type="checkbox" />
+          <label class="buy__label buy__label--orange" for="input-orange">
             <img
-              class="product__input-img product__input-orange"
+              class="buy__input-img product__input-orange"
               src="./images/modals/buy-now/buy-modal-3-1x.png"
               alt=""
             />
-            <span class="product__modul-text">milkshake</span>
+            <span class="buy__modul-text">milkshake</span>
           </label>
         </li>
       </ul>

@@ -7,10 +7,29 @@
 
     padding: 40px 20px;
 
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     background-color: rgba(182, 175, 175, 0.548);
 
+    opacity: 0;
+    pointer-events: none;
+
+    z-index: 50;
+
     overflow-y: scroll;
+
+    &.active {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+    }
 }
+
+// .is-hidden {
+//     opacity: 0;
+//     pointer-events: none;
+// }
+
 .header__modal {
     position: relative;
 
@@ -24,6 +43,12 @@
     background-color: $main-color;
     border: 2px solid $buttons-bg-color;
     border-radius: 10px;
+
+    &.active {
+        // opacity: 1;
+        // visibility: visible;
+        // pointer-events: auto;
+    }
 }
 .header__modal-button {
     position: absolute;
@@ -32,6 +57,8 @@
 
     background-color: transparent;
     border: none;
+
+    cursor: pointer;
 }
 .header__modal-title {
     font-family: $secondary-font;
@@ -44,17 +71,18 @@
     color: $secondary-color;
 }
 
-.product {
+.buy {
 }
-.product__list-modal {
+.buy__list-modal {
     @extend %list;
 
     margin-bottom: 24px;
 }
-.product__item-modal:not(:last-child) {
+
+.buy__item-modal:not(:last-child) {
     margin-bottom: 83px;
 }
-.product__label {
+.buy__label {
     position: relative;
 
     display: block;
@@ -70,7 +98,6 @@
     border-radius: 15px;
 
     transition: background-color 250ms;
-
     color: $secondary-color;
 
     &--green {
@@ -85,8 +112,12 @@
         border-color: $orange-bg;
         filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
     }
+
+    @media screen and (min-width: 1200px) {
+        cursor: pointer;
+    }
 }
-.product__modul-text {
+.buy__modul-text {
     display: block;
 
     padding-top: 90px;
@@ -101,20 +132,20 @@
 
     color: $secondary-color;
 }
-.product__input {
+.buy__input {
     appearance: none;
-    &:checked + .product__label--green {
+    &:checked + .buy__label--green {
         background-color: #96af8c;
     }
-    &:checked + .product__label--yellow {
+    &:checked + .buy__label--yellow {
         background-color: $yellow-bg;
     }
-    &:checked + .product__label--orange {
+    &:checked + .buy__label--orange {
         background-color: $orange-bg;
     }
 }
 
-.product__input-img {
+.buy__input-img {
     position: absolute;
     top: -50%;
     left: 0;
@@ -122,17 +153,17 @@
     border-bottom: 11px solid transparent;
     border-radius: 50%;
 }
-.product__input-green {
+.buy__input-green {
     transition: background-color 250ms;
 
     background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
     box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 }
-.product__input-yellow {
+.buy__input-yellow {
     background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
     box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
 }
-.product__input-orange {
+.buy__input-orange {
     background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #d9d9d9;
     box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
 }
