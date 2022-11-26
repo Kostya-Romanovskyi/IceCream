@@ -13,6 +13,14 @@
 
     z-index: 50;
     overflow-y: scroll;
+
+    opacity: 0;
+    pointer-events: none;
+
+    &.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
 }
 .hidden {
     opacity: 0;
