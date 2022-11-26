@@ -55,6 +55,7 @@
     text-align: center;
 
     background-color: $main-bg-color;
+    box-shadow: 0 16px 33px $main-bg-color;
 
     .header__mobile-wrapp.is-open & {
         transform: translate(0, 0);
@@ -90,5 +91,5 @@
 }
 .header__btn {
     @include main__button(14px, 152px, 42px);
-    margin-bottom: 32px;
+    margin-bottom: 65px;
 }

@@ -1,0 +1,22 @@
+.locations__modal-button {
+    position: absolute;
+    top: 15px;
+    right: 11px;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+.locations__modal-icon {
+}
+.locations__modal-title {
+    @extend %modal-title;
+    margin-bottom: 20px;
+}
+.locations__modal-map {
+    margin-bottom: 20px;
+}
+.locations__modal-btn {
+    @include main__button(12px, 134px, 42px);
+}
