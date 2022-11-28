@@ -99,7 +99,43 @@ document
         document.body.classList.remove('modal-open');
     });
 
-// modal "read more"
+//     // modal "ingredients"
+//     //  ingredients-top
+document
+    .getElementById('modal-ingredients-top-open')
+    .addEventListener('click', function () {
+        document.body.classList.add('modal-open');
+    });
+document
+    .getElementById('modal-ingredients-top-close')
+    .addEventListener('click', function () {
+        document.body.classList.remove('modal-open');
+    });
+// //  ingredients-middle
+document
+    .getElementById('modal-ingredients-mid-open')
+    .addEventListener('click', function () {
+        document.body.classList.add('modal-open');
+    });
+document
+    .getElementById('modal-ingredients-mid-close')
+    .addEventListener('click', function () {
+        document.body.classList.remove('modal-open');
+    });
+
+// //  ingredients-bottom
+document
+    .getElementById('modal-ingredients-bot-open')
+    .addEventListener('click', function () {
+        document.body.classList.add('modal-open');
+    });
+document
+    .getElementById('modal-ingredients-bot-close')
+    .addEventListener('click', function () {
+        document.body.classList.remove('modal-open');
+    });
+
+// // modal "read more"
 document
     .getElementById('modal-read-more-open')
     .addEventListener('click', function () {
@@ -111,7 +147,7 @@ document
         document.body.classList.remove('modal-open');
     });
 
-// modal "location"
+// // modal "location"
 document
     .getElementById('modal-location-open')
     .addEventListener('click', function () {
@@ -123,7 +159,7 @@ document
         document.body.classList.remove('modal-open');
     });
 
-// modal "franchise"
+// // modal "franchise"
 document
     .getElementById('modal-franchise-open')
     .addEventListener('click', function () {
@@ -135,41 +171,6 @@ document
         document.body.classList.remove('modal-open');
     });
 
-// modal "ingredients"
-//  ingredients-top
-document
-    .getElementById('modal-ingredients-top-open')
-    .addEventListener('click', function () {
-        document.body.classList.add('modal-open');
-    });
-document
-    .getElementById('modal-ingredients-close')
-    .addEventListener('click', function () {
-        document.body.classList.remove('modal-open');
-    });
-//  ingredients-middle
-document
-    .getElementById('modal-ingredients-mid-open')
-    .addEventListener('click', function () {
-        document.body.classList.add('modal-open');
-    });
-document
-    .getElementById('modal-ingredients-close')
-    .addEventListener('click', function () {
-        document.body.classList.remove('modal-open');
-    });
-
-//  ingredients-bottom
-document
-    .getElementById('modal-ingredients-bot-open')
-    .addEventListener('click', function () {
-        document.body.classList.add('modal-open');
-    });
-document
-    .getElementById('modal-ingredients-close')
-    .addEventListener('click', function () {
-        document.body.classList.remove('modal-open');
-    });
 
 // overlay
 document.getElementById('overlay-close').addEventListener('click', function () {

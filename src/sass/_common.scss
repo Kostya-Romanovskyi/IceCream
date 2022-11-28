@@ -4,6 +4,10 @@ body {
     font-family: $main-font;
     color: $main-color;
     background-image: url("../images/bg-ice_cream.png");
+
+    &.modal-open {
+        overflow: hidden;
+    }
 }
 h1,
 h2,
