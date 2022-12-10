@@ -6,11 +6,53 @@
 .hero__container {
     position: relative;
 
-    background-image: url(../images/hero/bg-bullets.svg);
+    @media screen and (max-width: 767px) {
+        background-image: url(../images/hero/bg-bullets.svg);
+    }
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/hero/bg-bullets-tablet.svg);
+    }
+
     background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
 }
+.hero__flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+.hero__title-wrapp {
+    max-width: 260px;
+}
+
+.hero__info-wrapp {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+.hero__numbers {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.21;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $secondary-color;
+}
+.hero__info {
+    font-size: 8px;
+    line-height: 1.25;
+
+    text-align: right;
+
+    color: $main-color;
+
+    &--indent {
+        margin-bottom: 20px;
+    }
+}
+
 .hero__title {
     font-family: $secondary-font;
 

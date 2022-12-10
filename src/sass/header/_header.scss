@@ -2,7 +2,8 @@
     position: relative;
     background-color: $main-bg-color;
 }
-.header__mobile-wrapp {
+.header__mobile-wrapp.is-open .tablet__btn {
+    display: block;
 }
 
 .logo {
@@ -23,6 +24,11 @@
 
     background-color: transparent;
     border: none;
+
+    @media screen and (min-width: 768px) {
+        position: static;
+        margin-left: auto;
+    }
 }
 .burger {
     transition: opacity 250ms;
@@ -42,6 +48,18 @@
         opacity: 1;
     }
 }
+.tablet__btn {
+    @include main__button(14px, 152px, 42px);
+    margin-left: 32px;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    &--none {
+        display: none;
+    }
+}
 .header__nav-wrapp {
     position: absolute;
     top: 100%;
@@ -50,7 +68,7 @@
     z-index: 10;
 
     transform: translate(0, -115%);
-    transition: transform 500ms;
+    transition: transform 250ms;
 
     text-align: center;
 
