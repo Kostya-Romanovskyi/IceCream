@@ -97,6 +97,10 @@
         max-width: 568px;
         padding: 32px 40px;
     }
+
+    @media screen and (min-width: 400px) {
+        max-width: 370px;
+    }
 }
 
 .overlay.active,

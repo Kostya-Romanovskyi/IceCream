@@ -48,13 +48,13 @@
     color: $color;
 }
 
-@mixin sub__title($fz, $lh, $color) {
+@mixin sub__title($fz, $lh, $color, $ta: center) {
     font-family: $main-font;
     font-weight: 800;
     font-size: $fz;
     line-height: $lh;
 
-    text-align: center;
+    text-align: $ta;
     text-transform: uppercase;
 
     color: $color;

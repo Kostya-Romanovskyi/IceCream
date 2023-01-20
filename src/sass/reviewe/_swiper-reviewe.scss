@@ -5,6 +5,27 @@
 .swiper {
     width: 100%;
     height: 450px;
+
+    @media screen and (min-width: 360px) {
+        height: 423px;
+    }
+
+    @media screen and (min-width: 445px) {
+        // height: 423px;
+        height: 393px;
+
+        margin-top: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+        height: 370px;
+
+        margin-top: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 349px;
+    }
 }
 
 .swiper .swiper-pagination-bullet {
@@ -44,6 +65,11 @@
     background-color: $main-bg-color;
 
     border-radius: 10px;
+
+    @media screen and (min-width: 1200px) {
+        width: 990px;
+        margin: 0 auto 20px auto;
+    }
 }
 .swiper__place {
     font-family: $main-font;
