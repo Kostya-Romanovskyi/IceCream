@@ -2,15 +2,38 @@
     position: relative;
     padding-top: 60px;
     background-color: $main-bg-color;
+
+    // @media screen and (max-width: 767px) {
+    //     background-image: url(../images/hero/bg-bullets.svg), url(../images/hero/ice_cream.png);
+    //     background-position: 50% 100%, 46px 89px;
+    // }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        background-image: url(../images/hero/bg-bullets-tablet.svg), url(../images/hero/ice_cream_tablet.png);
+        background-position: 50% 100%, 87% 53px;
+    }
+    // @media screen and (min-width: 1200px) {
+    //     background-image: url(../images/hero/bg-bullets-desctop.svg), url(../images/hero/ice_cream_desctop.png);
+    //     background-position: 50% 100%, 77% 49px;
+    // }
+
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .hero__container {
-    position: relative;
+    // position: relative;
 
     @media screen and (max-width: 767px) {
-        background-image: url(../images/hero/bg-bullets.svg);
+        background-image: url(../images/hero/bg-bullets.svg), url(../images/hero/ice_cream.png);
+        background-position: 50% 100%, 46px 89px;
     }
-    @media screen and (min-width: 768px) {
-        background-image: url(../images/hero/bg-bullets-tablet.svg);
+    // @media screen and (min-width: 768px) {
+    //     background-image: url(../images/hero/bg-bullets-tablet.svg), url(../images/hero/ice_cream_tablet.png);
+    //     background-position: 50% 100%, 112% 73px;
+    // }
+    @media screen and (min-width: 1200px) {
+        background-image: url(../images/hero/bg-bullets-desctop.svg), url(../images/hero/ice_cream_desctop.png);
+        background-position: 50% 100%, 81% 0;
     }
 
     background-position: bottom;
@@ -70,6 +93,10 @@
 }
 .hero__anchers {
     padding-bottom: 240px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 26px;
+    }
 }
 .hero__btn {
     @include secondary__button(8px, 1.25, 64px, 24px);
@@ -87,12 +114,39 @@
     color: $buttons-bg-color;
 }
 .hero__img-wrapp {
-    position: absolute;
-    bottom: -53px;
-    left: 17%;
+    position: relative;
+
+    display: flex;
+
+    padding-bottom: 30px;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 70px;
+    }
 }
 .hero__img {
-    width: 100%;
-
     display: block;
+}
+.hero__img-info {
+    width: 200px;
+
+    margin-left: 14px;
+
+    font-size: 14px;
+    line-height: 2;
+}
+.hero__img-arrow {
+    position: absolute;
+
+    @media screen and(min-width:768px) {
+        bottom: 31px;
+        left: 166px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        bottom: 73px;
+        left: 172px;
+    }
 }
