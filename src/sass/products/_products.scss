@@ -27,6 +27,13 @@
     text-decoration: none;
     flex-basis: calc((100% - 32px) / 3);
 
+    &:hover .product__svg {
+        transform: scaleX(1.2);
+    }
+    &:focus .product__svg {
+        transform: scale(1.2);
+    }
+
     @media screen and (max-width: 767px) {
         &:not(:last-child) {
             margin-bottom: 164px;
@@ -150,11 +157,4 @@
 }
 .product__svg {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover {
-        transform: scaleX(1.2);
-    }
-    &:focus {
-        transform: scale(1.2);
-    }
 }
