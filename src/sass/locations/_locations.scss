@@ -191,7 +191,9 @@
 }
 .locations-buttons__main-button {
     @include main__button(14px, 196px, 42px);
+    cursor: pointer;
 }
 .locations-buttons__secondary-button {
     @include secondary__button(14px, 1.28, 196px, 42px);
+    cursor: pointer;
 }

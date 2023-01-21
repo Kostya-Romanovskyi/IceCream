@@ -19,4 +19,16 @@
 }
 .locations__modal-btn {
     @include main__button(12px, 134px, 42px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    margin: 0 auto;
+
+    cursor: pointer;
+}
+.map {
+    margin-bottom: 32px;
 }

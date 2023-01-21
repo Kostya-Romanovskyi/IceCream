@@ -21,6 +21,18 @@
         gap: 16px;
     }
 }
+.product__link {
+    display: block;
+
+    text-decoration: none;
+    flex-basis: calc((100% - 32px) / 3);
+
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 164px;
+        }
+    }
+}
 .product__item {
     position: relative;
     background-color: $white-color;
