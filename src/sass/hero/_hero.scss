@@ -3,34 +3,21 @@
     padding-top: 60px;
     background-color: $main-bg-color;
 
-    // @media screen and (max-width: 767px) {
-    //     background-image: url(../images/hero/bg-bullets.svg), url(../images/hero/ice_cream.png);
-    //     background-position: 50% 100%, 46px 89px;
-    // }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         background-image: url(../images/hero/bg-bullets-tablet.svg), url(../images/hero/ice_cream_tablet.png);
-        background-position: 50% 100%, 87% 55px;
+        background-position: 50% 100%, 87% 58px;
     }
-    // @media screen and (min-width: 1200px) {
-    //     background-image: url(../images/hero/bg-bullets-desctop.svg), url(../images/hero/ice_cream_desctop.png);
-    //     background-position: 50% 100%, 77% 49px;
-    // }
 
     background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
 }
 .hero__container {
-    // position: relative;
-
     @media screen and (max-width: 767px) {
         background-image: url(../images/hero/bg-bullets.svg), url(../images/hero/ice_cream.png);
         background-position: 50% 100%, 46px 89px;
     }
-    // @media screen and (min-width: 768px) {
-    //     background-image: url(../images/hero/bg-bullets-tablet.svg), url(../images/hero/ice_cream_tablet.png);
-    //     background-position: 50% 100%, 112% 73px;
-    // }
+
     @media screen and (min-width: 1200px) {
         background-image: url(../images/hero/bg-bullets-desctop.svg), url(../images/hero/ice_cream_desctop.png);
         background-position: 50% 100%, 81% 0;
