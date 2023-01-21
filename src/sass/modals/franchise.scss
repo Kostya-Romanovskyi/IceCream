@@ -40,4 +40,5 @@
 }
 .franchise__modal-btn {
     @include main__button(12px, 134px, 42px);
+    cursor: pointer;
 }
