@@ -90,6 +90,9 @@
 .hero__anchers {
     padding-bottom: 240px;
 
+    display: flex;
+    align-items: center;
+
     @media screen and (min-width: 768px) {
         padding-bottom: 26px;
     }
@@ -99,6 +102,12 @@
 }
 .hero__btn {
     @include secondary__button(8px, 1.25, 64px, 24px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
     @media screen and (min-width: 1200px) {
         @include secondary__button(14px, 1.25, 134px, 42px);
     }
@@ -119,6 +128,8 @@
         font-weight: 600;
         font-size: 14px;
         line-height: 0.8;
+
+        margin-left: 15px;
     }
 }
 .hero__img-wrapp {
