@@ -74,9 +74,18 @@
     margin-bottom: 32px;
 
     color: $main-color;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 38px;
+        width: 380px;
+    }
 }
 .hero__decor {
     font-size: 33px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 38px;
+    }
 }
 .hero__anchers {
     padding-bottom: 240px;
@@ -84,21 +93,33 @@
     @media screen and (min-width: 768px) {
         padding-bottom: 26px;
     }
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 100px;
+    }
 }
 .hero__btn {
     @include secondary__button(8px, 1.25, 64px, 24px);
+    @media screen and (min-width: 1200px) {
+        @include secondary__button(14px, 1.25, 134px, 42px);
+    }
 }
 .hero__link {
     font-family: $main-font;
     font-weight: 600;
     font-size: 8px;
-    line-height: 10px;
+    line-height: 0.8;
 
     text-decoration-line: underline;
 
     margin-left: 8px;
 
     color: $buttons-bg-color;
+
+    @media screen and (min-width: 1200px) {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 0.8;
+    }
 }
 .hero__img-wrapp {
     position: relative;
@@ -111,11 +132,26 @@
     }
     @media screen and (min-width: 1200px) {
         padding-bottom: 70px;
+        margin-left: 10px;
     }
 }
 .hero__img {
     display: block;
+
+    animation: 4s linear 0s normal none infinite running rot;
 }
+img.rot {
+    width: 100px;
+}
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .hero__img-info {
     width: 200px;
 
